@@ -30,7 +30,7 @@ export default function(resources) {
 				catch (e) {
 					console.error(e);
 					// Put error
-					this.$data.remoteErros[key] = e;
+					this.$data.remoteErrors[key] = e;
 				}
 
 				this.$data.remoteDataLoading--;

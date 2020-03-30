@@ -22,9 +22,6 @@
 				type: String,
 				default: 'text'
 			},
-			value: {
-				required: true
-			},
 			placeholder: {
 				type: String
 			},
