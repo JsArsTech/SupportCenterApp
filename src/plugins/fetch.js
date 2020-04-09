@@ -20,10 +20,12 @@ export async function $fetch(url, options) {
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			credentials: 'include',			
+			//credentials: 'include',			
 		}, options);
 
-	const response = await fetch(`${baseUrl}${url}`, finalOptions);
+	const response = await fetch(`${baseUrl}${url}`, 
+		finalOptions);
+	
 	if (response.ok) {
 		const data = await response.json();
 		return data;
